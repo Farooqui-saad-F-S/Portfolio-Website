@@ -1,128 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Farooqui Saad</title>
-    <meta name="description" content="Farooqui Saad Web Developer Portfolio">
-    <meta name="keywords" content="Web Developer, HTML, CSS, JavaScript">
-    <meta name="author" content="Farooqui Saad">
-    <link rel="icon" href="FS Logo.png">
+    <meta name="description" content="Saad Farooqui - B.Sc. IT student and aspiring MERN Stack Developer portfolio">
+    <meta name="keywords" content="Saad Farooqui, Web Developer, JavaScript, MERN, React, Node.js, MongoDB">
+    <meta name="author" content="Saad Farooqui">
+    <title>Saad Farooqui | Web Developer</title>
+    <link rel="icon" href="FS logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="FS Logo.png" alt="Portfolio Logo">
-            Portfolio
-        </div>
-        <div class="navigation">
-            <a href="#Home" rel="noopener noreferrer">Home</a>
-            <a href="#About" rel="noopener noreferrer">About</a>
-            <a href="#Skills" rel="noopener noreferrer">Skills</a>
-            <a href="#Projects" rel="noopener noreferrer">Projects</a>
-            <a href="#Contact" rel="noopener noreferrer">Contact</a>
-        </div>
-    </nav>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Go to home">
+                <img src="FS logo.png" alt="FS logo">
+                <span>Saad Farooqui</span>
+            </a>
+
+            <div class="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
     <main>
-        <section id="Home">
-            <div class="home-content">
-                <div class="info">
-                    <h1>Farooqui Saad</h1>
-                    <p>
-                        Hi, I am a <strong>Web Developer</strong> & a passionate learner of modern MERN development. I
-                        enjoy
-                        creating responsive and user-friendly websites using HTML, CSS, and JavaScript. I am constantly
-                        exploring new technologies and improving my skills to build better web experiences.
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">B.Sc. IT Student • Web Developer</p>
+                    <h1>Hi, I'm <span>Saad Farooqui</span></h1>
+                    <h2>Aspiring MERN Stack Developer</h2>
+                    <p class="hero-text">
+                        I enjoy building responsive and practical web applications. My strongest foundation is in
+                        JavaScript, HTML and CSS, and I am currently improving my skills in React, Node.js,
+                        Express.js and MongoDB through hands-on projects.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button primary" href="#projects">View My Projects</a>
+                        <a class="button secondary" href="Saad Simple Professional Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+                    </div>
+
+                    <div class="quick-info" aria-label="Quick information">
+                        <span>JavaScript focused</span>
+                        <span>Learning MERN</span>
+                        <span>Open to internships</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="profile-image-wrap">
+                        <img src="Saad.jpeg" alt="Saad Farooqui">
+                    </div>
+                    <p>Learning by building real projects and improving one feature at a time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">About Me</p>
+                    <h2>Building my skills through real work</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="card about-card">
+                        <p>
+                            I am a B.Sc. IT student with a strong interest in web development. I started with HTML,
+                            CSS and JavaScript and now I am gradually moving deeper into the MERN stack.
+                        </p>
+                        <p>
+                            I like understanding how features work, solving bugs, improving interfaces and working
+                            with projects that have real use cases. I am still learning advanced React and backend
+                            concepts, so I focus on building a strong foundation instead of claiming skills I have
+                            not mastered yet.
+                        </p>
+                    </div>
+
+                    <div class="card focus-card">
+                        <h3>What I focus on</h3>
+                        <ul>
+                            <li>Clean and responsive user interfaces</li>
+                            <li>JavaScript problem solving</li>
+                            <li>Working with frontend and backend APIs</li>
+                            <li>Debugging and improving existing features</li>
+                            <li>Git and GitHub based development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>What I know and what I'm learning</h2>
+                    <p>I prefer to keep this section honest and show my current level clearly.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="card skill-card">
+                        <span class="level">Strong Foundation</span>
+                        <h3>Core Web</h3>
+                        <div class="tag-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript ES6+</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </article>
+
+                    <article class="card skill-card">
+                        <span class="level">Working Knowledge</span>
+                        <h3>Development Tools</h3>
+                        <div class="tag-list">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>REST APIs</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </article>
+
+                    <article class="card skill-card">
+                        <span class="level">Currently Improving</span>
+                        <h3>MERN Stack</h3>
+                        <div class="tag-list">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Things I have worked on</h2>
+                    <p>Projects that helped me practice development, debugging and problem solving.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="card project-card featured-project">
+                        <div class="project-topline">
+                            <span class="project-number">01</span>
+                            <span class="project-type">Team Project</span>
+                        </div>
+                        <h3>ClientDesk</h3>
+                        <p>
+                            A team web application for agencies, freelancers and local retailers. I have worked on
+                            inventory-related features, UI improvements, integrations and debugging while learning
+                            how a larger MERN project is structured.
+                        </p>
+                        <div class="tag-list compact">
+                            <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Git</span>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-topline">
+                            <span class="project-number">02</span>
+                            <span class="project-type">College Project</span>
+                        </div>
+                        <h3>EcoLens</h3>
+                        <p>
+                            An environmental awareness project focused on making air and water quality information
+                            easier to understand through a clean interface, educational content and visualizations.
+                        </p>
+                        <div class="tag-list compact">
+                            <span>React</span><span>Tailwind CSS</span><span>APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://super-task-manager.netlify.app/" target="_blank" rel="noopener noreferrer">Live Project →</a>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-topline">
+                            <span class="project-number">03</span>
+                            <span class="project-type">JavaScript</span>
+                        </div>
+                        <h3>Task Manager</h3>
+                        <p>A browser-based task manager built using HTML, CSS, JavaScript and LocalStorage.</p>
+                        <div class="project-links">
+                            <a href="https://super-task-manager.netlify.app/" target="_blank" rel="noopener noreferrer">Live Project →</a>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-topline">
+                            <span class="project-number">04</span>
+                            <span class="project-type">JavaScript</span>
+                        </div>
+                        <h3>Snake Game</h3>
+                        <p>A classic browser game created to practice JavaScript logic, events and DOM updates.</p>
+                        <div class="project-links">
+                            <a href="https://farooqui-saad-f-s.github.io/Snake-Game/" target="_blank" rel="noopener noreferrer">Live Project →</a>
+                        </div>
+                    </article>
+
+                    <article class="card project-card">
+                        <div class="project-topline">
+                            <span class="project-number">05</span>
+                            <span class="project-type">Frontend</span>
+                        </div>
+                        <h3>Spotify Clone</h3>
+                        <p>A responsive Spotify-inspired interface created to practice frontend layout and styling.</p>
+                        <div class="project-links">
+                            <a href="https://spotify-clone.farooquisaad.workers.dev/" target="_blank" rel="noopener noreferrer">Live Project →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-muted">
+            <div class="container contact-layout">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let's connect</h2>
+                    <p class="contact-text">
+                        I am currently looking for opportunities where I can learn, contribute and grow as a web
+                        developer, especially in JavaScript and the MERN stack.
                     </p>
                 </div>
-                <div class="profilepic">
-                    <img src="Saad.jpeg" alt="Farooqui Saad profile picture">
-                </div>
-            </div>
-            <div class="hero-buttons">
-                <a href="#Projects" rel="noopener noreferrer">View Projects</a>
-                <a href="Saad Simple Professional Resume.pdf" target="_blank" rel="noopener noreferrer">Download
-                    Resume</a>
-            </div>
-        </section>
 
-        <section id="About">
-            <h2>About Me</h2>
-            <p>
-                I am a passionate web developer focused on creating responsive,
-                interactive, and user-friendly web applications. Currently learning
-                the MERN stack and improving my frontend and backend development skills
-                through real-world projects.
-            </p>
-        </section>
-
-        <section id="Skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-group">
-                    <h3>Frontend Technologies</h3>
-                    <ul>
-                        <li>Html</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Git and GitHub</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h3>Backend Technologies</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                    </ul>
-                </div>
-                <div class="skill-group">
-                    <h3>Learning</h3>
-                    <ul>
-                        <li>Tailwind CSS</li>
-                        <li>React</li>
-                        <li>MongoDB</li>
-                        <li>Next.js</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="Projects">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3><a href="https://spotify-clone.farooquisaad.workers.dev/" target="_blank"
-                            rel="noopener noreferrer">Spotify Clone</a>
-                    </h3>
-                    <p>Responsive music player UI inspired by Spotify.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://super-task-manager.netlify.app/" target="_blank" rel="noopener noreferrer">Task
-                            Manager</a></h3>
-                    <p>Built Using HTML, CSS, JavaScript and LocalStorage.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="https://farooqui-saad-f-s.github.io/Snake-Game/" target="_blank"
-                            rel="noopener noreferrer">Snake Game</a></h3>
-                    <p>Classic snake game implemented with HTML, CSS, and JavaScript.</p>
+                <div class="card contact-card">
+                    <a href="mailto:farooquisaad153@gmail.com">
+                        <span>Email</span>
+                        <strong>farooquisaad153@gmail.com</strong>
+                    </a>
+                    <a href="https://github.com/Farooqui-saad-F-S" target="_blank" rel="noopener noreferrer">
+                        <span>GitHub</span>
+                        <strong>Farooqui-saad-F-S</strong>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saad-farooqui-836959402/" target="_blank" rel="noopener noreferrer">
+                        <span>LinkedIn</span>
+                        <strong>Saad Farooqui</strong>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer id="Contact">
-        <h2>Contact</h2>
-
-        <p><strong>GitHub:</strong> <a href="https://github.com/Farooqui-saad-F-S" target="_blank" rel="noopener noreferrer">Farooqui-Saad</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saad-farooqui-836959402/?skipRedirect=true" target="_blank" rel="noopener noreferrer">Saad Farooqui</a></p>
-        <p><strong>Email:</strong> farooquisaad153@gmail.com</p>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>Built with HTML, CSS and JavaScript by Saad Farooqui.</p>
+            <p>© <span id="year"></span> Saad Farooqui</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
-
 </body>
-
 </html>
